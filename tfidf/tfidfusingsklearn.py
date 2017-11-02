@@ -24,7 +24,10 @@ for sentence in corpus_list:
     processed_sentence = [i for i in words if not i in stop_words]
     processed_corpus.append(processed_sentence)
 
+fdist_list = []
 for st in processed_corpus:
+    fdist = nltk.FreqDist(st)
+    fdist_list.append(fdist)
     print(st)
     
 tfidf_vectorizer = TfidfVectorizer(min_df=1, lowercase=False, tokenizer=lambda doc:doc, analyzer='word'\
