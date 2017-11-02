@@ -25,7 +25,7 @@ Z = AgglomerativeClustering().fit_predict(cosine_similarity_matrix_2D)
 
 print(Z)
 
-plotly.tools.set_credentials_file(username='apooos3', api_key='z2yZqlKj1z4JA6WR938R')
+plotly.tools.set_credentials_file(username='username', api_key='********************')
 dendro = ff.create_dendrogram(np.array(cosine_similarity_matrix_2D))
 dendro['layout'].update({'width':1000, 'height':800})
 py.iplot(dendro, filename='simple_dendrogram')
