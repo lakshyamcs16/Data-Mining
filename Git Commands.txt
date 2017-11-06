@@ -1,0 +1,33 @@
+Git commands:
+
+How to setup git
+
+git config --global user.name "lakshyamcs16"
+git config --global user.email sethi.laskhya94@gmail.com
+git clone https://github.com/lakshyamcs16/Data-Mining.git
+----------------------------------------------------------------
+How to get Git Status
+
+git status
+----------------------------------------------------------------
+How to edit commit message
+
+git commit --amend -m "Renamed"
+git push --force origin master
+----------------------------------------------------------------
+How to remove dicrectory
+
+git rm -r "Assignment 1"
+git commit -m "Removed Assignment 1 old directory"
+git push origin master
+----------------------------------------------------------------
+How to rename directory
+
+git mv "tfidf" "TF-IDF"
+----------------------------------------------------------------
+How to push a file
+
+git add <filename>
+git commit -m <message>
+git push -u origin master
+git remote add origin master <url>
