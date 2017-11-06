@@ -2,8 +2,8 @@ Git commands:
 
 How to setup git
 
-git config --global user.name "lakshyamcs16"
-git config --global user.email sethi.laskhya94@gmail.com
+git config --global user.name "git username"
+git config --global user.email git_profile_linked_email
 git clone https://github.com/lakshyamcs16/Data-Mining.git
 ----------------------------------------------------------------
 How to get Git Status
