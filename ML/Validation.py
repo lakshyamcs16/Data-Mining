@@ -67,3 +67,9 @@ training_examples.describe()
 
 training_targets = preprocess_features(california_housing_dataframe.head(12000))
 training_targets.describe()
+
+validation_examples = preprocess_features(california_housing_dataframe.tail(5000))
+validation_examples.describe()
+
+validation_targets = preprocess_targets(california_housing_dataframe.tail(5000))
+validation_targets.describe()
