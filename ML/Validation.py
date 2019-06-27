@@ -12,7 +12,7 @@ from sklearn import metrics
 import tensorflow as tf
 from tensorflow.python.data import Dataset
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 pd.options.display.max_rows = 10
 pd.options.display.float_format = '{:.1f}'.format
 
@@ -62,8 +62,8 @@ def preprocess_targets(california_housing_dataframe):
     california_housing_dataframe["median_house_value"] / 1000.0)
   return output_targets
 
-  training_examples = preprocess_features(california_housing_dataframe.head(12000))
-  training_examples.describe()
+training_examples = preprocess_features(california_housing_dataframe.head(12000))
+training_examples.describe()
 
-  training_targets = preprocess_features(california_housing_dataframe.head(12000))
-  training_targets.describe()
+training_targets = preprocess_features(california_housing_dataframe.head(12000))
+training_targets.describe()
