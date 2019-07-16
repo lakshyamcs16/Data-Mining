@@ -1060,6 +1060,7 @@ movie_embedding_norm([model, model_lowinit, reg_model])
 # Visualize the embeddings
 tsne_movie_embeddings(reg_model)
 
+# To Continue from here .... 
 """We should observe that the embeddings have a lot more structure than the unregularized case. Try selecting different genres and observe how they tend to form clusters (for example Horror, Animation and Children).
 
 ### Conclusion
